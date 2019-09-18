@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/keyboardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/keyboard_logo_bg"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="11dp"
+            android:layout_height="14dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/iv_close"
+            android:gravity="center"
+            android:text="安全键盘"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="end|center"
+            android:text="完成"
+            android:textColor="#4B8DFA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6d2d5db"
+        android:padding="6dp"
+        android:shrinkColumns="1"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_height="50dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/keyboard_press_bg"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_height="50dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/keyboard_press_bg"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_height="50dp"
+                android:background="@drawable/keyboard_press_bg"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/keyboard_press_bg"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/keyboard_press_bg"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/keyboard_press_bg"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/keyboard_press_bg"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/keyboard_press_bg"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/keyboard_press_bg"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv0"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/keyboard_press_bg"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:id="@+id/iv_delete"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/keyboard_change">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:src="@drawable/selector_keyboard_delete_bg"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
